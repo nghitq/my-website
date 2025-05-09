@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Trang chính"
+        name: "home"
+        fields:
+          - { label: "Tiêu đề", name: "title", widget: "string" }
+          - { label: "Giới thiệu", name: "intro", widget: "text" }
